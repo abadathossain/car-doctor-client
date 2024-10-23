@@ -1,11 +1,12 @@
-import React from 'react'
+import About from '../About/About'
 import Banner from '../Banner/Banner'
+
 
 export default function Home() {
   return (
     <div>
       <Banner/>
-       <h1>This is  Home</h1>
+      <About/>
 
     </div>
   )
