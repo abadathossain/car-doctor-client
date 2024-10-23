@@ -1,5 +1,6 @@
 import About from '../About/About'
 import Banner from '../Banner/Banner'
+import Services from '../Services/Services'
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <Banner/>
       <About/>
+      <Services/>
 
     </div>
   )
