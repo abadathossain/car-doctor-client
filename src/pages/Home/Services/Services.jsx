@@ -5,17 +5,17 @@ import ServiceCard from "./ServiceCard"
 export default function Services() {
     const [services, setServices]=useState([])
 
-    useEffect(()=>{
-        axios.get('http://localhost:5000/services')
-        .then(data=>setServices(data.data))
+    // useEffect(()=>{
+    //     axios.get('http://localhost:5000/services')
+    //     .then(res=>setServices(res.data))
        
-    },[])
+    // },[])
 
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/services')
-    //         .then(res => res.json())
-    //         .then(data => setServices(data));
-    // }, [])
+    useEffect(() => {
+        fetch('http://localhost:5000/services')
+            .then(res => res.json())
+            .then(data => setServices(data));
+    }, [])
 
   return (
     <div className="mt-4">
